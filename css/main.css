@@ -1,0 +1,57 @@
+/* BEM for card components */
+.card {
+  border: 1px solid #666 ;
+  border-radius: 5px;
+  margin: 10px;
+  display: inline-block;
+}
+
+.card__image {
+  max-width: 100%;
+}
+
+.card__title {
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.card__content {
+  margin: 10px 0;
+  color: #666;
+}
+
+.card__button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  display: block;
+}
+
+.card__button:hover {
+  background-color: #0056b3;
+}
+
+/* Basic utility classes */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+}
+
+.card-group {
+  text-align: center;
+}
+
+/* Example responsive utility class for small screens */
+@media (max-width: 768px) {
+  .container {
+      max-width: 100%;
+  }
+}
+
