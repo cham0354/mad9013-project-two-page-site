@@ -112,7 +112,7 @@ padding-right: 1.5rem;
     color: #fff;
     border-radius: .25em; 
 
-    /* link necessary styles */
+    
     text-decoration: none;
 
     /*button necessary styles */
@@ -128,8 +128,8 @@ padding-right: 1.5rem;
 }
 
 .btn--secondary {
-    background-color: red;
-    border-color: lightsalmon;
+    background-color: #36BF7F;
+    border-color: #36BF7F;
     color: #000;
 }
 
@@ -146,9 +146,9 @@ padding-right: 1.5rem;
 
 
 .about img {
-  max-width: 60%; 
+  max-width: 60%; /* Set the maximum width to your desired size */
   height: auto; 
-  float: center; 
+  float: center; /* Align the image to the left */
   margin-right: 10rem;
   margin-top: 5rem;
   margin-bottom: 5rem;
@@ -156,12 +156,12 @@ padding-right: 1.5rem;
   
 }
 .about {
-  display: flex; 
-  align-items: center; 
+  display: flex; /* Use flexbox for layout */
+  align-items: center; /* Center vertically within the section */
 }
 
 .about .container {
-  flex: 1 1; 
+  flex: 1 1; /* Set the container to take up 50% of the available space */
   padding-right: 2rem; 
   margin-right: 2rem;
   margin-left: 4rem;
@@ -173,118 +173,21 @@ padding-right: 1.5rem;
 }
 
 
-
-.cards {
-  margin-top: 1.25rem;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); 
-  grid-gap: 1.25rem; 
-  justify-content: space-evenly;
-}
-
-
-.card {
-  flex:content; 
-  width:auto;
-  margin-right: 1.25rem; 
-  border:  solid #666;
-  border-radius: 0.65rem;
-  margin: 6rem auto; 
-  background-color: #000;
-  color: #fff;
-  text-align:start;
-  padding: 3rem;
-}
-.card__image {
-  max-width: 100%;
-  height: 12.5rem;
-  object-fit: contain; 
-
-}
-
-.card__title {
-  font-weight: bold;
-  margin: 0.65rem 0.65rem;
-}
-
-.card__content {
-  margin: 3rem 3rem;
-  color: #666;
-}
-
-.card__button {
-  background-color: #007bff;
-  color: #fff;
-  padding: 0.65rem 1.25rem;
-  text-decoration: none;
-  border-radius: 0.35rem;
-  display: block;
-  margin-top: 0.65rem;
-}
-
-.card__button:hover {
-  background-color: #0056b3;
-}
-
    
 
 
-@media (max-width: 48rem) {
-  .container {
-    max-width: 100%;
-  }
-}
-
-
-.container .grid-container {
-  display: grid;
-  grid-template-columns: 1fr; 
-  grid-gap: 0.325;
-
-}
-
-
-.title {
-  
-  text-orientation: mixed; 
-  padding: 0.625 0; 
-  text-align: center ; 
-}
-
-/* Basic utility classes */
-.header {
-  text-align: center;
-}
-
-.card-group {
-    display: flex; 
-    flex-direction: row;
-    justify-content:space-between; 
-    gap: 2.5rem; 
-    text-align: center;
-    
-    
-  background-color: blueviolet;
-}
-.card-group .container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 3.75rem;
-  
-}
-
+/* Example responsive utility class for small screens */
 @media (max-width: 48rem) {
   .container {
       max-width: 100%;
   }
 }
 .banner {
-  background-image: url("../images/hero-banner.jpg");
-  background-size: cover;
+  background-image: url("../images/blog-image-adventurers.jpg");
+  background-size: 100% 100%;
   background-position: center;
 
-
+  /* Additional styles for the banner content, e.g., text and padding */
 }
 .banner .container {
   min-height: 85vh;
@@ -345,7 +248,7 @@ color: #fff;
   border-bottom: 0.5rem solid blueviolet;
   justify-content:flex-end;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column; /* Change from column to row to align horizontally */
   align-items:flex-end;
 }
 
@@ -409,6 +312,7 @@ color: #fff;
 .footer__logo {
   flex: 2 0;
   align-self: flex-start;
+  
 }
 
 .footer__nav,
@@ -420,25 +324,29 @@ color: #fff;
   flex-direction: column;
   align-items: flex-end;
   justify-content:right;
-  margin-top: 1.25rem;
+  margin-top: 20px;
   right: 1rem;
 }
 
 .legal-links a {
   text-decoration: none;
   color: #fff;
-  margin-top: 0.625rem;
+  margin-top: 10px;
 }
 
+/* Add this CSS rule to style the container for the cards and use Grid */
+ /* Center the cards horizontally */
 
+
+/* Modify the existing container styles */
 .container {
-  max-width: 100%; 
+  max-width: 100%; /* Ensure the container stretches to the available width */
   margin: 0 auto;
   display: flex;
-  justify-content: center; 
+  justify-content: center; /* Center the container horizontally */
 }
 
-
+/* Reset some default styles for the body and anchor tags */
 body {
   margin: 0;
   padding: 0;
@@ -449,9 +357,9 @@ a {
   text-decoration: none;
 }
 
-
+/* Style the header and navbar */
 .header {
-  background-color: lightsalmon ;
+  background-color: lightsalmon;
   color: #fff;
   border-top: 0.5rem solid blueviolet;
   padding: 1rem;
@@ -508,7 +416,7 @@ a {
 
 .navbar__link {
   text-decoration: none;
-  color: white;
+  color: #fff;
   transition: background-color 0.3s;
   margin-right: 1rem;
   padding: 1rem 1rem; 
@@ -526,12 +434,59 @@ a {
   position: relative;
 }
 
+.content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 800px; /* Adjust the maximum width as needed */
+}
+
+h2 {
+    color: blueviolet;
+}
 
 
+.bordered-h2, .bordered-p {
+    border: 0.125rem solid lightblue; /* Adjust width and color as needed */
+    padding: 0.625rem; 
+    background-color: lightblue;
+}
+.related-blog-posts {
+    text-align: center;
+}
 
+.related-blog-posts {
+    text-align: center;
+}
 
+.card-container {
+    display: flex;
+    flex-direction:row; 
+    gap: 1.25rem; 
+    align-items:flex-start; /* Center items vertically in the container */
+}
 
+.card {
+    background: orange;
+    padding: 1.25rem;
+    border: 1px solid #ddd;
+    border-radius: 0.3rem;
+    text-align: left;
+    max-width: 18.75rem;
 
+}
 
+.card h2 {
+    color: #333; /* Change the color as needed */
+    font-size: 1.2rem; /* Adjust the font size as needed */
+    margin: 0;
+}
+
+.card p {
+    font-size: 0.9rem; /* Adjust the font size as needed */
+    margin: 5px 0;
+}
 
 
