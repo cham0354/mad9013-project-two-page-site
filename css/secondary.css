@@ -177,7 +177,20 @@ padding-right: 1.5rem;
 
 
 /* Example responsive utility class for small screens */
+/* ---------- prof comment ----------
+
+You should be using `min-width` media queries only.
+We work mobile-first in this program.
+
+---------- end prof comment ---------- */
 @media (max-width: 48rem) {
+  /* ---------- prof comment ----------
+  
+  this style is unnecessary. The container
+  is already max-width 100% on small screens
+  because of the min(65em, 100%) function
+  
+  ---------- end prof comment ---------- */
   .container {
       max-width: 100%;
   }

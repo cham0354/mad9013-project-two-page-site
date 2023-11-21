@@ -228,7 +228,12 @@ padding-right: 1.5rem;
 
    
 
+/* ---------- prof comment ----------
 
+You should be using `min-width` media queries only.
+We work mobile-first in this program.
+
+---------- end prof comment ---------- */
 @media (max-width: 48rem) {
   .container {
     max-width: 100%;
@@ -274,6 +279,12 @@ padding-right: 1.5rem;
   
 }
 
+/* ---------- prof comment ----------
+
+You should be using `min-width` media queries only.
+We work mobile-first in this program.
+
+---------- end prof comment ---------- */
 @media (max-width: 48rem) {
   .container {
       max-width: 100%;
